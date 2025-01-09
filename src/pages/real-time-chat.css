@@ -1,0 +1,16 @@
+.customer-chat-dialog .p-dialog-footer {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top: 1px solid lightgray;
+  padding: 1rem;
+}
+
+.customer-chat-dialog .p-dialog-content {
+  height: 220px;
+}
+
+.customer-chat-input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
