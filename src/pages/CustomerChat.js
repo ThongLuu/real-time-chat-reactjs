@@ -92,11 +92,6 @@ const CustomerChat = () => {
             }
           }}
         />
-        <Button
-          label="Gửi"
-          onClick={handleSendMessage}
-          className="p-button-danger mt-2"
-        />
       </div>
     );
   };

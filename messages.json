@@ -1,0 +1,38 @@
+{
+  "room_12345": [
+    {
+      "sender": "Customer",
+      "content": "Hello!"
+    }
+  ],
+  "room_1736426605267": [
+    {
+      "sender": "Customer",
+      "content": "hi"
+    }
+  ],
+  "room_1736433860928": [
+    {
+      "sender": "Customer",
+      "content": "hello"
+    },
+    {
+      "sender": "Customer",
+      "content": "hello"
+    }
+  ],
+  "room_1736433977990": [
+    {
+      "sender": "Customer",
+      "content": "hi"
+    },
+    {
+      "sender": "Customer",
+      "content": "bạn có nghe tôi nói không"
+    },
+    {
+      "sender": "User-f4bfe3",
+      "content": "cố ạ"
+    }
+  ]
+}
