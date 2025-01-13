@@ -5,96 +5,128 @@
       "content": "Hello!"
     }
   ],
-  "room_1736426605267": [
+  "room_1736751363405": [
     {
       "sender": "Customer",
       "content": "hi"
+    },
+    {
+      "sender": "User-Gearvn",
+      "content": "hi"
     }
   ],
-  "room_1736433860928": [
+  "room_1736752416655": [
+    {
+      "sender": "Customer",
+      "content": "hello😊"
+    },
+    {
+      "sender": "User-Gearvn",
+      "content": "hello"
+    },
+    {
+      "sender": "User-Gearvn",
+      "content": "hú"
+    }
+  ],
+  "room_1736753517364": [
+    {
+      "sender": "Customer",
+      "content": "hi"
+    },
+    {
+      "sender": "User-Gearvn",
+      "content": "hello"
+    },
+    {
+      "sender": "Customer",
+      "content": "😆"
+    },
+    {
+      "sender": "Customer",
+      "content": "alo"
+    },
+    {
+      "sender": "Customer",
+      "content": "hú"
+    }
+  ],
+  "room_1736753759230": [
+    {
+      "sender": "Customer",
+      "content": "hi"
+    },
+    {
+      "sender": "Customer",
+      "content": "hello"
+    }
+  ],
+  "room_1736754272725": [
+    {
+      "sender": "Customer",
+      "content": "hi"
+    },
     {
       "sender": "Customer",
       "content": "hello"
     },
     {
+      "sender": "User-Gearvn",
+      "content": "em chào anh/chị"
+    },
+    {
       "sender": "Customer",
-      "content": "hello"
+      "content": "🍉"
+    },
+    {
+      "sender": "Customer",
+      "content": "😆"
     }
   ],
-  "room_1736433977990": [
+  "room_1736754616706": [
     {
       "sender": "Customer",
-      "content": "hi"
+      "content": "cái gì vây"
     },
     {
       "sender": "Customer",
-      "content": "bạn có nghe tôi nói không"
-    },
-    {
-      "sender": "User-f4bfe3",
-      "content": "cố ạ"
-    }
-  ],
-  "room_1736480801783": [
-    {
-      "sender": "Customer",
-      "content": "hi"
-    }
-  ],
-  "room_1736482946198": [
-    {
-      "sender": "Customer",
-      "content": "hi"
+      "content": "ủa alo"
     },
     {
       "sender": "Customer",
-      "content": "hi"
-    }
-  ],
-  "room_1736485046701": [
-    {
-      "sender": "Customer",
-      "content": "hi"
+      "content": "hú "
     },
     {
       "sender": "Customer",
-      "content": "hello"
+      "content": "hú"
     },
     {
       "sender": "Customer",
-      "content": "chào bạn"
+      "content": "😑"
     },
     {
-      "sender": "User-39f21e",
-      "content": "em chào anh ạ"
-    }
-  ],
-  "room_1736741020541": [
-    {
-      "sender": "Customer",
-      "content": "🫢☺️🍋🫠"
-    }
-  ],
-  "room_1736741140383": [
-    {
-      "sender": "Customer",
-      "content": "hi shop"
-    },
-    {
-      "sender": "User-5d572d",
-      "content": "hi bạn"
+      "sender": "User-Gearvn",
+      "content": "vâng, anh.chị cần j ạ"
     },
     {
       "sender": "Customer",
-      "content": "😄😃😉😊😃🐵"
+      "content": "😃"
     },
     {
-      "sender": "User-5d572d",
-      "content": "j vậy bạn"
+      "sender": "User-Gearvn",
+      "content": "???"
+    },
+    {
+      "sender": "Customer",
+      "content": "mình thích thì nhắn thôii"
     },
     {
       "sender": "Customer",
       "content": "😉"
+    },
+    {
+      "sender": "Customer",
+      "content": "🐵"
     }
   ]
 }

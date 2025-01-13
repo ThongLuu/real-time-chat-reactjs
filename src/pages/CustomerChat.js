@@ -11,6 +11,7 @@ const CustomerChat = () => {
   const [message, setMessage] = useState("");
   const [roomName, setRoomName] = useState(null); // Phòng hiện tại
   const [messages, setMessages] = useState([]); // Danh sách tin nhắn
+  const [sender, setSender] = useState("Customer");
   const [showEmojiPicker, setShowEmojiPicker] = useState(false); // Trạng thái hiển thị Emoji Picker
   const socket = useRef(null); // Tham chiếu đến socket
 
@@ -143,14 +144,22 @@ const CustomerChat = () => {
         }}
       >
         {/* Hiển thị tin nhắn trong body */}
-        <div
-          className="chat-messages"
-          style={{ maxHeight: "300px", overflowY: "auto" }}
-        >
+        <div className="chat-messages pt-4">
           {messages.map((msg, index) => (
-            <div key={index} className="message-item">
-              <strong>{msg.sender}: </strong>
-              <span>{msg.content}</span>
+            <div
+              key={index}
+              className={`flex ${
+                msg.sender === sender
+                  ? "justify-content-start"
+                  : "justify-content-end"
+              } mb-2`}
+            >
+              <div
+                className={`p-2 rounded-lg shadow-md text-black border-round-lg bg-gray-100`}
+              >
+                <div className="font-bold">{msg.sender}</div>
+                <div>{msg.content}</div>
+              </div>
             </div>
           ))}
         </div>
