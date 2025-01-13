@@ -3,11 +3,7 @@ import Chat from "./pages/Chat";
 import CustomerChat from "./pages/CustomerChat";
 
 const App = () => {
-  return (
-    <div className="relative w-full h-screen">
-      <CustomerChat />
-    </div>
-  );
+  return <CustomerChat />;
 };
 
 export default App;

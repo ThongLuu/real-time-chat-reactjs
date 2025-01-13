@@ -15,6 +15,7 @@ const io = socketIo(server, {
       "http://192.168.0.37:3000",
       "http://localhost:3002",
       "http://192.168.0.37:3002",
+      "https://gearvn-uat.myharavan.com",
     ],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
@@ -77,6 +78,7 @@ app.use(
       "http://192.168.0.37:3000",
       "http://localhost:3002",
       "http://192.168.0.37:3002",
+      "https://gearvn-uat.myharavan.com",
     ], // Cho phép cả localhost và IP của bạn
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],

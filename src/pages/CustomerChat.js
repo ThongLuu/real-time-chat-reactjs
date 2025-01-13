@@ -1,15 +1,17 @@
+import React, { useState, useRef, useEffect } from "react";
+import io from "socket.io-client";
 import { Button } from "primereact/button";
 import { Dialog } from "primereact/dialog";
 import { InputText } from "primereact/inputtext";
-import React, { useState, useRef, useEffect } from "react";
-import io from "socket.io-client";
 import "./real-time-chat.css";
+import CustomEmojiPicker from "../components/CustomEmojiPicker";
 
 const CustomerChat = () => {
   const [isDialogVisible, setIsDialogVisible] = useState(false);
   const [message, setMessage] = useState("");
   const [roomName, setRoomName] = useState(null); // Phòng hiện tại
   const [messages, setMessages] = useState([]); // Danh sách tin nhắn
+  const [showEmojiPicker, setShowEmojiPicker] = useState(false); // Trạng thái hiển thị Emoji Picker
   const socket = useRef(null); // Tham chiếu đến socket
 
   useEffect(() => {
@@ -59,6 +61,10 @@ const CustomerChat = () => {
     }
   };
 
+  const handleEmojiClick = (emojiData) => {
+    setMessage((prev) => prev + emojiData.emoji); // Thêm emoji vào tin nhắn
+  };
+
   const renderHeader = () => {
     return (
       <div className="flex gap-3">
@@ -80,7 +86,7 @@ const CustomerChat = () => {
 
   const renderFooter = () => {
     return (
-      <div className="border-round-bottom-2xl">
+      <div className="border-round-bottom-2xl flex align-items-center">
         <InputText
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -92,14 +98,25 @@ const CustomerChat = () => {
             }
           }}
         />
+        <Button
+          icon="pi pi-face-smile"
+          className="p-button-text p-2 show-emoji-button"
+          onClick={() => setShowEmojiPicker((prev) => !prev)}
+        />
+        {showEmojiPicker && (
+          <CustomEmojiPicker
+            onEmojiClick={handleEmojiClick}
+            onClose={() => setShowEmojiPicker(false)}
+          />
+        )}
       </div>
     );
   };
 
   return (
-    <div className="relative w-full h-full">
+    <div>
       {/* Button */}
-      <div className="absolute" style={{ bottom: "25%", right: "5%" }}>
+      <div className="fixed" style={{ bottom: "25%", right: "5%" }}>
         <Button
           icon="pi pi-comments"
           rounded
