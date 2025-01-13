@@ -117,7 +117,7 @@ const CustomerChat = () => {
   return (
     <div>
       {/* Button */}
-      <div className="fixed" style={{ bottom: "25%", right: "5%" }}>
+      <div className="fixed" style={{ bottom: "15%", right: "5%" }}>
         <Button
           icon="pi pi-comments"
           rounded
@@ -139,8 +139,9 @@ const CustomerChat = () => {
         style={{
           width: "320px",
           position: "absolute",
-          bottom: "25%",
+          bottom: "15%",
           right: "0",
+          border: "none",
         }}
       >
         {/* Hiển thị tin nhắn trong body */}
